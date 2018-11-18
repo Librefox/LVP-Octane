@@ -120,9 +120,6 @@
       console.log("Typed Arrays not supported");
       document.getElementById("alertbox").style.display="block";
     }
-    skipBenchmarks.push("zlib");
-    skipBenchmarks.push("deltablue");
-    skipBenchmarks.push("raytrace");
     if (window.document.URL.indexOf('skip_zlib=1') >= 0)
       skipBenchmarks.push("zlib");
     if (window.document.URL.indexOf('auto=1') >= 0)
