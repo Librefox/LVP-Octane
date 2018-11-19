@@ -16,25 +16,11 @@
 <script src="js/bootstrap-collapse.js"></script>
 <!-- Octane benchmark code -->
 <script type="text/javascript" src="base.js"></script>
-<script type="text/javascript" src="richards.js"></script>
-<script type="text/javascript" src="deltablue.js"></script>
-<script type="text/javascript" src="crypto.js"></script>
-<script type="text/javascript" src="raytrace.js"></script>
-<script type="text/javascript" src="earley-boyer.js"></script>
 <script type="text/javascript" src="regexp.js"></script>
-<script type="text/javascript" src="splay.js"></script>
 <script type="text/javascript" src="navier-stokes.js"></script>
-<script type="text/javascript" src="pdfjs.js"></script>
-<script type="text/javascript" src="mandreel.js"></script>
-<script type="text/javascript" src="gbemu-part1.js"></script>
-<script type="text/javascript" src="gbemu-part2.js"></script>
 <script type="text/javascript" src="code-load.js"></script>
-<script type="text/javascript" src="box2d.js"></script>
 <script type="text/javascript" src="zlib.js"></script>
 <script type="text/javascript" src="zlib-data.js"></script>
-<script type="text/javascript" src="typescript.js"></script>
-<script type="text/javascript" src="typescript-input.js"></script>
-<script type="text/javascript" src="typescript-compiler.js"></script>
 
 <script type="text/javascript">
   var completed = 0;
@@ -181,7 +167,7 @@ body {
     <div id="main-container">
     <a id="run-octane" href="javascript:Run()">
       <div class="hero-unit" id="inside-anchor">
-        <h1 align="center" id="main-banner">Start Octane 2.0</h1>
+        <h1 align="center" id="main-banner">Start Less-Variable-Possible Octane 2.0</h1>
         <div id="bar-appendix"></div>
       </div>
     </a>
@@ -198,69 +184,7 @@ body {
 
     <div class="content">
       <div class="row">
-        <div class="span3">
-          <div class="box" id="Box-Richards" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#richards"
-              target="_blank" style="float:left; color:#994520">Richards</a>
-   
-            <p class="p-result" id="Result-Richards" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Core
-              language features</span>
-          </div>
 
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-DeltaBlue" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#deltablue"
-              target="_blank" style="float:left; color:#994520">Deltablue</a>
-           
-            <p class="p-result" id="Result-DeltaBlue" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Core
-              language features</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-Crypto" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#crypto"
-              target="_blank" style="float:left; color:#994520">Crypto</a>
-           
-            <p class="p-result" id="Result-Crypto" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Bit &
-              Math operations</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-RayTrace" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#raytrace"
-              target="_blank" style="float:left; color:#994520">Raytrace</a>
-   
-            <p class="p-result" id="Result-RayTrace" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Core
-              language features</span>
-          </div>
-        </div>
-
-      </div>
-      <!-- /row -->
-
-      <div class="row">
-
-        <div class="span3">
-          <div class="box" id="Box-EarleyBoyer" style="visibility: hidden;">
-            <a
-              href="http://developers.google.com/octane/benchmark#earleyboyer"
-              target="_blank" style="float:left; color:#994520">EarleyBoyer</a>
-           
-            <p class="p-result" id="Result-EarleyBoyer" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Memory
-              & GC</span>
-          </div>
-        </div>
         <div class="span3">
           <div class="box" id="Box-RegExp" style="visibility: hidden;">
             <a href="http://developers.google.com/octane/benchmark#regexp"
@@ -272,33 +196,7 @@ body {
               & arrays</span>
           </div>
         </div>
-        <div class="span3">
-          <div class="box" id="Box-Splay" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#splay"
-              target="_blank" style="float:left; color:#994520">Splay</a>
-           
-            <p class="p-result" id="Result-Splay" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Memory
-              & GC</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-SplayLatency" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#splaylatency"
-              target="_blank" style="float:left; color:#994520">SplayLatency</a>
 
-            <p class="p-result" id="Result-SplayLatency" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">GC latency
-            </span>
-          </div>
-        </div>
-
-      </div>
-      <!-- /row -->
-
-      <div class="row">
         <div class="span3">
           <div class="box" id="Box-NavierStokes" style="visibility: hidden;">
             <a
@@ -311,56 +209,7 @@ body {
               & arrays</span>
           </div>
         </div>
-        <div class="span3">
-          <div class="box" id="Box-PdfJS" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#pdfjs"
-              target="_blank" style="float:left; color:#994520">pdf.js</a>
-           
-            <p class="p-result" id="Result-PdfJS" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Strings
-              & arrays</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-Mandreel" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#mandreel"
-              target="_blank" style="float:left; color:#994520">Mandreel</a>
-           
-            <p class="p-result" id="Result-Mandreel" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Virtual
-              machine</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-MandreelLatency" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#mandreellatency"
-              target="_blank" style="float:left; color:#994520">MandreelLatency</a>
 
-            <p class="p-result" id="Result-MandreelLatency" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Compiler latency
-            </span>
-          </div>
-        </div>
-
-      </div>
-      <!-- /row -->
-
-      <div class="row">
-        <div class="span3">
-          <div class="box" id="Box-Gameboy" style="visibility: hidden;">
-            <a
-              href="http://developers.google.com/octane/benchmark#gameboyemulator"
-              target="_blank" style="float:left; color:#994520">GB Emulator</a>
-
-            <p class="p-result" id="Result-Gameboy" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Virtual
-              machine</span>
-          </div>
-        </div>
         <div class="span3">
           <div class="box" id="Box-CodeLoad" style="visibility: hidden;">
             <a href="http://developers.google.com/octane/benchmark#codeload"
@@ -373,17 +222,6 @@ body {
           </div>
         </div>
         <div class="span3">
-          <div class="box" id="Box-Box2D" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#box2d"
-              target="_blank" style="float:left; color:#994520">Box2DWeb</a>
-           
-            <p class="p-result" id="Result-Box2D" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Bit &
-              Math operations</span>
-          </div>
-        </div>
-        <div class="span3">
           <div class="box" id="Box-zlib" style="visibility: hidden;">
             <a href="http://developers.google.com/octane/benchmark#zlib"
               target="_blank" style="float:left; color:#994520">zlib</a>
@@ -391,17 +229,6 @@ body {
             <p class="p-result" id="Result-zlib" style="float:right">...</p>
             <span class="label-simple"
               style="position: absolute; bottom: 3px; left: 3px;">asm.js</span>
-          </div>
-        </div>
-        <div class="span3">
-          <div class="box" id="Box-Typescript" style="visibility: hidden;">
-            <a href="http://developers.google.com/octane/benchmark#typescript"
-              target="_blank" style="float:left; color:#994520">Typescript</a>
-           
-            <p class="p-result" id="Result-Typescript" style="float:right">...</p>
-            <span class="label-simple"
-              style="position: absolute; bottom: 3px; left: 3px;">Virtual machine & GC
-            </span>
           </div>
         </div>
 
@@ -451,3 +278,4 @@ body {
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
+
