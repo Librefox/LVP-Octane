@@ -6,4 +6,4 @@ It is based on Octane 2.0 but most of the tests are removed to make it less vari
 
 [Run LVP Octane 2 now!](https://intika.github.io/lvp-octane/)
 
-For more information, check out the [homepage](https://developers.google.com/octane/), [benchmark reference](https://developers.google.com/octane/benchmark), [FAQ](https://developers.google.com/octane/faq), [Octane is retired](https://v8project.blogspot.com/2017/04/retiring-octane.html).
+For more information, check out the [homepage](https://developers.google.com/octane/), [benchmark reference](https://developers.google.com/octane/benchmark), [Octane is retired](https://v8project.blogspot.com/2017/04/retiring-octane.html), [FAQ](https://developers.google.com/octane/faq).
